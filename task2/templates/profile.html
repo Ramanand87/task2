@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+
+<body>
+
+    <div class="profile_name" >name:- {{prof.name}}</div>
+    <div class="profile_username" >username:- @{{prof.user.username}}</div>   
+    <div class="right_details_child" id="email">email :-{{request.user.email}}</div>
+    <div class="right_details_child" id="number">address:- {{prof.address}}</div>
+    <div class="right_details_child" id="number">user_type:- {{prof.user_type}}</div>
+</body>
+
+</html>

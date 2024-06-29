@@ -1,0 +1,25 @@
+{
+    "dev": {
+        "manage_roles": false,
+        "aws_region": "eu-west-2",
+        "role_name": "MyLambdaRole",
+        "role_arn": "arn:aws:iam::12345:role/app-ZappaLambdaExecutionRole",
+        "extra_permissions": [{ 
+            "Effect": "Allow",
+            "Action": ["rekognition:*"], 
+            "Resource": "*"
+        }],
+        "django_settings": "task2.settings",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "task2",
+        "runtime": "python3.12",
+        "s3_bucket": "zappa-wc4n0ei8d"
+    }
+}
